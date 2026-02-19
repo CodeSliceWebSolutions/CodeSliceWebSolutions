@@ -3,20 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CodeSlice Web Solutions</title>
+  <title>CS Nova Digital Studio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+
 </head>
+
 <body>
+<a href="#core" class="floating-cta">Start at R500</a>
+
+<canvas id="particles"></canvas>
+
+<div class="space-glow"></div>
 
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">
-      <img src="assets/logo.jpg" alt="CodeSlice Web Solutions">
+      <img src="assets/logo.png" alt="CS Nova Digital Studio">
     </div>
 
-    <!-- HAMBURGER -->
     <div class="menu-toggle" id="menuToggle">
-      ☰
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
     <nav id="navMenu">
@@ -28,134 +38,315 @@
     </nav>
   </header>
 
-
   <!-- HERO -->
   <section class="hero">
-    <h1>Professional Websites That Get You More Customers</h1>
-    <p>Fast, modern, and mobile-friendly websites designed to help your business look professional and grow online.</p>
-    <div class="hero-buttons">
-      <a href="#contact" class="btn">Get Your Website</a>
-      <a href="#templates" class="btn-outline">View Templates</a>
+    <div class="container hero-inner">
+      <div class="hero-visual">
+        <h1>Structured Digital Systems That Help Your Business Scale</h1>
+        <p>
+          CS Nova Digital Studio builds growth-driven digital systems designed to 
+          improve visibility, increase revenue, automate operations, and prepare 
+          businesses for long-term expansion.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn">Start Your Project</a>
+          <a href="#templates" class="btn-outline">View Templates</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- TRUST STRIP -->
   <section class="trust">
-    <span>✔ Fast Delivery</span>
-    <span>✔ Mobile Friendly</span>
-    <span>✔ SEO Ready</span>
-    <span>✔ Clear Pricing</span>
-    <span>✔ Direct Support</span>
+    <span>✔ Structured Growth</span>
+    <span>✔ Conversion-Focused</span>
+    <span>✔ Automation Ready</span>
+    <span>✔ SEO & Visibility</span>
+    <span>✔ Long-Term Partnership</span>
   </section>
 
   <!-- SERVICES -->
   <section id="services" class="section">
-    <h2>What I Do</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Website Design</h3>
-        <p>Clean, modern websites for businesses, brands, and professionals.</p>
-      </div>
-      <div class="card">
-        <h3>Website Redesign</h3>
-        <p>Upgrade outdated websites to look modern and professional.</p>
-      </div>
-      <div class="card">
-        <h3>Deployment & Hosting</h3>
-        <p>GitHub & Netlify setup, domain connection, and guidance.</p>
+    <div class="container">
+      <h2>The Nova Growth Framework™</h2>
+      <p>Every website is built as a structured growth system — not just an online presence.</p>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Presence (Foundation)</h3>
+          <p>Clean, fast, mobile-first websites with strategic messaging and trust signals.</p>
+        </div>
+
+        <div class="card">
+          <h3>Conversion (Revenue)</h3>
+          <p>High-converting calls-to-action, lead capture systems, and WhatsApp integration.</p>
+        </div>
+
+        <div class="card">
+          <h3>Automation (Efficiency)</h3>
+          <p>Automated replies, workflows, and booking systems that save operational time.</p>
+        </div>
+
+        <div class="card">
+          <h3>Visibility (Traffic)</h3>
+          <p>SEO fundamentals, Google indexing, analytics setup, and structured search visibility.</p>
+        </div>
+
+        <div class="card">
+          <h3>Scalability (Future-Proofing)</h3>
+          <p>Modular architecture, stable hosting, and clear upgrade paths for sustainable growth.</p>
+        </div>
+
       </div>
     </div>
   </section>
+
+  <!-- CORE PACKAGES -->
+<section id="core" class="section dark">
+  <div class="container">
+
+    <h2>CORE Website Packages</h2>
+    <p>Structured entry-level systems designed to launch your business professionally and fast.</p>
+
+    <!-- Compare Toggle -->
+    <div class="compare-toggle">
+      <button onclick="toggleCompare()" class="btn-outline">
+        Compare All Features
+      </button>
+    </div>
+
+    <div class="cards pricing-grid">
+
+      <!-- STARTER -->
+      <div class="card pricing-card">
+        <h3>Starter Launch</h3>
+        <p class="price">R500 <span>once-off</span></p>
+
+        <p class="package-desc">
+          Perfect for businesses that want a simple, shareable online presence for Facebook, WhatsApp, and business cards.
+        </p>
+
+        <ul>
+          <li>✔ 1-page professional website</li>
+          <li>✔ Mobile-friendly</li>
+          <li>✔ WhatsApp click-to-chat button</li>
+          <li>✔ Services & contact info</li>
+          <li>✔ Facebook page link</li>
+          <li>✔ Hosted online (shareable link)</li>
+          <li>✔ Delivery in 48–72 hours</li>
+        </ul>
+
+        <a href="https://wa.me/27684760534?text=Hi%20CS%20Nova,%20I%20would%20like%20to%20start%20the%20R500%20Starter%20Launch%20Package.%0A%0ABusiness%20Name:%0AIndustry:%0AWhen%20can%20we%20begin?"
+           class="btn">Start Now</a>
+      </div>
+
+
+      <!-- MOST POPULAR -->
+      <div class="card pricing-card highlight popular">
+        <div class="badge">MOST POPULAR</div>
+
+        <h3>Professional Presence</h3>
+        <p class="price">R800 <span>once-off</span></p>
+
+        <p class="package-desc">
+          Ideal for businesses that want a professional website with their own domain name and stronger credibility.
+        </p>
+
+        <ul>
+          <li>✔ Custom domain setup</li>
+          <li>✔ 1-page professional website</li>
+          <li>✔ Mobile-friendly</li>
+          <li>✔ WhatsApp button</li>
+          <li>✔ Services section</li>
+          <li>✔ Contact details</li>
+          <li>✔ Basic SEO setup</li>
+          <li>✔ Delivery in 3–5 days</li>
+        </ul>
+
+        <a href="https://wa.me/27684760534?text=Hi%20CS%20Nova,%20I%20would%20like%20to%20start%20the%20R800%20Professional%20Presence%20Package.%0A%0ABusiness%20Name:%0AIndustry:%0AWhen%20can%20we%20begin?"
+           class="btn">Choose This</a>
+      </div>
+
+
+      <!-- BUSINESS -->
+      <div class="card pricing-card">
+        <h3>Business Authority</h3>
+        <p class="price">R1,500 <span>once-off</span></p>
+
+        <p class="package-desc">
+          Designed for established businesses that want to build trust, authority, and attract more customers.
+        </p>
+
+        <ul>
+          <li>✔ Custom domain setup</li>
+          <li>✔ 4–6 pages (Home, About, Services, Gallery, Contact)</li>
+          <li>✔ Mobile-friendly & modern design</li>
+          <li>✔ WhatsApp chat button</li>
+          <li>✔ Contact form</li>
+          <li>✔ Google Maps integration</li>
+          <li>✔ Facebook integration</li>
+          <li>✔ Delivery in 5–7 days</li>
+        </ul>
+
+        <a href="https://wa.me/27684760534?text=Hi%20CS%20Nova,%20I%20would%20like%20to%20start%20the%20R1500%20Business%20Authority%20Package.%0A%0ABusiness%20Name:%0AIndustry:%0AWhen%20can%20we%20begin?"
+           class="btn">Build My Website</a>
+      </div>
+
+    </div>
+
+    <!-- CARE PLAN -->
+    <div class="care-plan">
+      <h3>Optional Growth Care Plan</h3>
+      <p class="price">R250 <span>per month</span></p>
+
+      <p class="package-desc">
+        Continuous support and optimization to keep your website secure, updated, and stress-free.
+      </p>
+
+      <ul>
+        <li>✔ Minor text & image updates</li>
+        <li>✔ Website backups</li>
+        <li>✔ Security & uptime checks</li>
+        <li>✔ WhatsApp priority support</li>
+        <li>✔ Small monthly improvements</li>
+      </ul>
+
+      <p class="care-bonus">
+        🔥 Keeps your website running smoothly while you focus on your business.
+      </p>
+    </div>
+
+    <!-- COMPARISON TABLE -->
+    <div id="comparisonTable" class="comparison hidden">
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Starter</th>
+          <th>Professional</th>
+          <th>Business</th>
+        </tr>
+        <tr>
+          <td>Custom Domain</td>
+          <td>—</td>
+          <td>✔</td>
+          <td>✔</td>
+        </tr>
+        <tr>
+          <td>Multi-Page Website</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✔</td>
+        </tr>
+        <tr>
+          <td>SEO Setup</td>
+          <td>—</td>
+          <td>✔</td>
+          <td>✔</td>
+        </tr>
+        <tr>
+          <td>Contact Form</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✔</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- TEMPLATES -->
   <section id="templates" class="section dark">
-    <h2>Website Templates</h2>
-    <p>Choose from professionally designed templates you can preview live.</p>
+    <div class="container">
+      <h2>Website Templates</h2>
+      <p>Choose from professionally designed templates available for live preview.</p>
 
-    <div class="cards templates-grid">
+      <div class="cards templates-grid">
 
-      <div class="template-card">
-        <img src="assets/templates/business.png" alt="Business Website Template">
-        <h3>Business Website</h3>
-        <p>Ideal for companies and professional services.</p>
-        <div class="template-actions">
-          <button onclick="openPreview('https://codeslicewebsolutions.github.io/Plumbing-Template-2/')">Live Preview</button>
+        <div class="template-card">
+          <img src="assets/templates/business.png" alt="Business Website Template">
+          <h3>Business Website</h3>
+          <p>Ideal for companies and professional service providers.</p>
+          <div class="template-actions">
+            <button onclick="openPreview('https://codeslicewebsolutions.github.io/Plumbing-Template-2/')">Live Preview</button>
+          </div>
         </div>
-      </div>
 
-      <div class="template-card">
-        <img src="assets/templates/service.png" alt="Service Website Template">
-        <h3>Service Website</h3>
-        <p>Perfect for plumbers, electricians, and freelancers.</p>
-        <div class="template-actions">
-          <button onclick="openPreview('https://codeslicewebsolutions.github.io/Consulting-Template-1/')">Live Preview</button>
+        <div class="template-card">
+          <img src="assets/templates/service.png" alt="Service Website Template">
+          <h3>Service Website</h3>
+          <p>Perfect for plumbers, electricians, and freelancers.</p>
+          <div class="template-actions">
+            <button onclick="openPreview('https://codeslicewebsolutions.github.io/Consulting-Template-1/')">Live Preview</button>
+          </div>
         </div>
-      </div>
 
-      <div class="template-card">
-        <img src="assets/templates/personal.png" alt="Personal Brand Template">
-        <h3>Personal Brand</h3>
-        <p>Showcase yourself and your work professionally.</p>
-        <div class="template-actions">
-          <button onclick="openPreview('https://codeslicewebsolutions.github.io/Construction-Template-1/')">Live Preview</button>
+        <div class="template-card">
+          <img src="assets/templates/personal.png" alt="Personal Brand Template">
+          <h3>Personal Brand</h3>
+          <p>Showcase yourself and your work professionally.</p>
+          <div class="template-actions">
+            <button onclick="openPreview('https://codeslicewebsolutions.github.io/Construction-Template-1/')">Live Preview</button>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </section>
-
-  <!-- TEMPLATE PREVIEW MODAL -->
-  <div id="previewModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closePreview()">×</span>
-      <iframe id="previewFrame"></iframe>
-    </div>
-  </div>
-
 
   <!-- ABOUT -->
   <section id="about" class="section">
-    <h2>About CodeSlice</h2>
-    <p>
-      CodeSlice Web Solutions was created to help businesses look professional online
-      without stress or confusion. I focus on clarity, quality, and honest communication.
-    </p>
-  </section>
-
-  <!-- LIVE PROJECTS / PORTFOLIO -->
-  <section class="section">
-    <h2>Featured Live Websites</h2>
-    <p>A selection of real websites built by CodeSlice Web Solutions.</p>
-
-    <div class="cards portfolio-grid">
-
-      <div class="portfolio-card">
-        <img src="assets/portfolio/plumbing.png" alt="">
-        <h3>Just Plumbing Solutions</h3>
-        <a href="https://justplumbingsolutions.netlify.app/" target="_blank" class="btn">Visit Website</a>
-      </div>
-
-      <div class="portfolio-card">
-        <img src="assets/portfolio/sakhiksasa.png" alt="">
-        <h3>Sakhiksasa Foundation</h3>
-        <a href="https://sakhiksasafoundation.org/" target="_blank" class="btn">Visit Website</a>
-      </div>
-
-      <div class="portfolio-card">
-        <img src="assets/portfolio/onthego.png" alt="">
-        <h3>On The Go Construction</h3>
-        <a href="https://www.onthegoconstruction.co.za" target="_blank" class="btn">Visit Website</a>
-      </div>
-
-      
-
+    <div class="container">
+      <h2>About CS Nova</h2>
+      <p>
+        CS Nova Digital Studio is a growth-focused digital development company 
+        operating as a private company. We build structured digital systems — not just websites.
+      </p>
+      <p>
+        We believe a business should improve in every aspect when it goes online:
+        visibility, conversion, operational efficiency, and scalability.
+      </p>
+      <p>
+        Using websites as the foundation, we partner with businesses to guide continuous 
+        digital growth — ensuring technology becomes a practical system for measurable progress.
+      </p>
     </div>
-
-    <br>
-    <a href="portfolio.html" class="btn">View Full Portfolio (50+)</a>
   </section>
 
+  <!-- PORTFOLIO -->
+  <section class="section">
+    <div class="container">
+      <h2>Featured Live Websites</h2>
+      <p>A selection of structured systems built by CS Nova Digital Studio.</p>
 
+      <div class="cards portfolio-grid">
+
+        <div class="portfolio-card">
+          <img src="assets/portfolio/plumbing.png" alt="">
+          <h3>Just Plumbing Solutions</h3>
+          <a href="https://justplumbingsolutions.netlify.app/" target="_blank" class="btn">Visit Website</a>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="assets/portfolio/sakhiksasa.png" alt="">
+          <h3>Sakhiksasa Foundation</h3>
+          <a href="https://sakhiksasafoundation.org/" target="_blank" class="btn">Visit Website</a>
+        </div>
+
+        <div class="portfolio-card">
+          <img src="assets/portfolio/onthego.png" alt="">
+          <h3>On The Go Construction</h3>
+          <a href="https://www.onthegoconstruction.co.za" target="_blank" class="btn">Visit Website</a>
+        </div>
+
+      </div>
+
+      <br>
+      <a href="portfolio.html" class="btn">View Full Portfolio (50+)</a>
+    </div>
+  </section>
 
   <!-- REVIEWS -->
   <section id="reviews" class="section dark">
@@ -163,12 +354,12 @@
     <div class="cards">
       <div class="card review">
         <p>⭐⭐⭐⭐⭐</p>
-        <p>"Simple process and great communication. My website looks amazing."</p>
+        <p>"Simple process and great communication. The results exceeded expectations."</p>
         <span>- Business Owner</span>
       </div>
       <div class="card review">
         <p>⭐⭐⭐⭐⭐</p>
-        <p>"Very professional and fast delivery. Highly recommended."</p>
+        <p>"Professional, structured, and delivered on time. Highly recommended."</p>
         <span>- Local Client</span>
       </div>
     </div>
@@ -176,19 +367,27 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section">
-    <h2>Get Your Website</h2>
-    <p>Tell me what you need and I’ll get back to you.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="What website do you need?" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="container">
+      <h2>Start Your Digital Growth</h2>
+      <p>
+        For service-based businesses that are starting, restructuring, or scaling.
+        Let’s build a structured system that supports measurable growth.
+      </p>
+
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Describe the website or system you need" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 CodeSlice Web Solutions. All rights reserved.</p>
+    <p>
+      © 2026 CS Nova Digital Studio | A Private Company | Structured Digital Growth Systems
+    </p>
   </footer>
 
   <script src="js/main.js"></script>
